@@ -12,6 +12,23 @@ Forecast whether the propositions will be TRUE or FALSE. You earn if your forelo
 | --------------------------------------------------------- | ---- | -------------------- |
 | Will Donald Trump win the 2024 U.S. president nomination? | 28   | Dec.31 2023 23:59:59 |
 
+#### Chainlink
+![image](https://github.com/WSbaikaishui/chainlink-Prophet/assets/46080358/56a20dbe-451f-4abd-8d68-7b19355fdc67)
+
+Our project is built on the Chainlink ecosystem. This project is running on Polygon Mumbai Testnet. In Prophet, we use USDT and Yes / No as test tokens. Each transaction can be viewed through Polygon explorer. Chainlink Oracle will also be used for the data predictions.
+
+**Price-Feed**
+
+For price prediction proposals, Prophet adopts the **Price-Feed** of Chainlink, which can make the prices we extract provide fair enough.
+
+**Function**
+
+For proposals that will obtain results from external links, Prophet uses the **Function** of Chainlink. This function enables the contract to easily access external APIs. Since the APIs were already on chain when the proposal is launched, the links cannot be modified. Coupled with the access to multiple nodes of **Function**, the results we obtain are accurate enough.
+
+**Automation**
+
+**Automation** function of Chainlink allows the contract to trigger the judge by itself under specific conditions. This largely saves labor costs and ensures that the judge is carried out in a timely manner, consolidating the entire project.
+
 #### deposit
 
 Give me 100 USD, and I will give you 100 TRUE and 100 FALSE tokens of a certain proposition. You still need to [buy/sell](#buysell) between TRUE and FALSE tokens to bet for a certain position. 
