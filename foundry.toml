@@ -1,6 +1,12 @@
 [profile.default]
 src = "src"
 out = "out"
-libs = ["lib"]
+libs = ["lib","node_modules"]
+
+[profile.solc]
+version = "0.8.22"  # 用您项目的 Solidity 版本替换
+optimizer = true   # 启用优化
+runs = 999999         # 优化器的运行次数，根据您的需求进行调整
+viaIR = true
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
